@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+a,
+img,
+button,
+input,
+label,
+select,
+span,
+i {
+    display: inline-block;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+ul {
+    list-style: none;
+}
+img {
+    width: 100%;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    min-height: 100vh;
+}
+
+.btn {
+    text-decoration: none;
+    border: 1px solid;
+    border-radius: 0.5rem;
+    background-color: #fff;
+    color: #000;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 1rem 1.8rem;
+    transition: 0.25s;
+}
+.btn:is(:hover, :focus, :focus-within) {
+    background-color: #000;
+    color: #fff;
+}
+
+select,
+option,
+input {
+    padding: 1rem 1.5rem;
+    width: 100%;
+}
+
+select {
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 4rem;
+    margin-bottom: 3rem;
+}
+
+figure {
+    --image-size: 8rem;
+    width: var(--image-size);
+    height: var(--image-size);
+
+    border-radius: 50%;
+    border: 2px solid;
+    overflow: hidden;
+
+    margin-bottom: 1rem;
+}
+figure img {
+    object-fit: cover;
+}
+
+nav {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.main-container {
+    padding: 4rem;
+    font-size: 3rem;
+}
+
+.addUser-form {
+    max-width: 40rem;
+    margin: 0 auto;
+}
+
+.addUser-form fieldset {
+    padding: 2rem;
+    display: grid;
+    grid-gap: 1.5rem;
+}
+
+.users-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3rem;
+}
+.user {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.user span {
+    font-size: 130%;
+    font-weight: 900;
+}

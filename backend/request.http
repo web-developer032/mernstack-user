@@ -1,0 +1,7 @@
+@baseURL = http://localhost:5000
+@userURL = /api/v1/users
+
+GET {{baseURL}} 
+
+### USER URL
+GET {{baseURL}}{{userURL}} 
